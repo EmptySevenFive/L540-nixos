@@ -22,3 +22,9 @@ sudo nix-shell https://github.com/emptysevenfive/Student-Nixos/archive/main.tar.
 
 When asked for disk... enter /dev/sda
 
+When asked enter password for default user: student
+
+Enable/Disable root user in default.nix
+
+If enabled last step is to set root password.
+
