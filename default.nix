@@ -31,6 +31,7 @@ pkgs.mkShell {
     mkpasswd --method=sha-512 "$PASSWORD" > /mnt/etc/passwordFile-student
     chmod 600 /mnt/etc/passwordFile-student
     
-    nixos-install --no-root-passwd
+#    nixos-install --no-root-passwd
+     nixos-install
   '';
 }
