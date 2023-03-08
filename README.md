@@ -20,4 +20,5 @@ issue the following command.
 sudo nix-shell https://github.com/emptysevenfive/Student-Nixos/archive/main.tar.gz
 ```
 
+When asked for disk... enter /dev/sda
 
