@@ -63,6 +63,7 @@
      isNormalUser = true;
      description = "Student user";
      extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+     passwordFile = "/etc/passwordFile-student";
      packages = with pkgs; [
        firefox
        thunderbird
