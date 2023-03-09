@@ -28,3 +28,7 @@ Enable/Disable root user in default.nix
 
 If enabled last step is to set root password.
 
+Laptop will autoconnect to makerspace
+
+
+
