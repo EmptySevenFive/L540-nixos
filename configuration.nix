@@ -15,8 +15,14 @@
 
   networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  # networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  
+  networking.wireless.networks = {
+    makerspace = {
+      	pskRaw = "f0c693b649a74919deda19c3be5e696e692af64cdb82b27d1387d42f485b5ed7";
+    };
+  };
 
   # Set your time zone.
   time.timeZone = "Europe/London";
@@ -62,6 +68,7 @@
   users.users.student = {
      isNormalUser = true;
      description = "Student user";
+     # extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user. Use this if NetworkManager used
      extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
      passwordFile = "/etc/passwordFile-student";
      packages = with pkgs; [
@@ -83,6 +90,7 @@ tree
 pandoc
 tldr
 openssh
+wpa_supplicant_gui
 
    ];
 
