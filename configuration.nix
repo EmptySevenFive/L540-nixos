@@ -86,15 +86,18 @@
    environment.systemPackages = with pkgs; [
      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
      wget
-htop
-go
-glow
-git
-tree
-pandoc
-tldr
-openssh
-wpa_supplicant_gui
+     htop
+     go
+     glow
+     git
+     tree
+     pandoc
+     tldr
+     openssh
+     wpa_supplicant_gui
+     nixpkgs-fmt
+     nix-output-monitor
+     curl
 
    ];
 
