@@ -23,6 +23,10 @@
       	pskRaw = "f0c693b649a74919deda19c3be5e696e692af64cdb82b27d1387d42f485b5ed7";
     };
   };
+  
+  # enable wifi for user control
+  networking.wireless.userControlled.enable = true;
+  
 
   # Set your time zone.
   time.timeZone = "Europe/London";
