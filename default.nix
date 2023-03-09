@@ -27,6 +27,8 @@ pkgs.mkShell {
     
     nixos-generate-config --root /mnt
     cp -r ${studentnixos}/* /mnt/etc/nixos
+    cp ${studentnixos}/configuration.nix /mnt/etc/nixos/configuration.original
+    
     
     mkpasswd --method=sha-512 "$PASSWORD" > /mnt/etc/passwordFile-student
     chmod 600 /mnt/etc/passwordFile-student
